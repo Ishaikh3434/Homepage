@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>My Projects</title>
+  <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+  <header><h1>My Projects</h1></header>
+  <main>
+    <section class="projects-grid" id="grid"></section>
+  </main>
+  <script>
+    fetch('{{ url_for("static", filename="data/projects.json") }}')
+      .then(r => r.ok ? r.json() : Promise.reject(r.statusText))
+      .then(projects => {
+        const grid = document.getElementById('grid');
+        projects.forEach(p => {
+          const a = document.createElement('a');
+          a.href = p.url;
+          a.className = 'project-item';
+          a.innerHTML = `
+            <div class="thumbnail-container">
+              <img src="${p.thumb}" class="thumbnail" alt="${p.name}">
+              <div class="overlay"><p>${p.desc}</p></div>
+            </div>
+            <p class="project-title">${p.name}</p>
+          `;
+          grid.appendChild(a);
+        });
+      })
+      .catch(err => {
+        document.getElementById('grid').innerHTML =
+          '<p class="error">Couldn’t load projects.</p>';
+        console.error(err);
+      });
+  </script>
+</body>
+</html>

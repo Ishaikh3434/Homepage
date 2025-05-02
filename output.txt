@@ -1,0 +1,23 @@
+
+<p><strong>INSTRUCTIONS:</strong> Tasty Salad</p>
+<p><strong>Ingredients:</strong></p>
+<p><em>Salad:</em></p>
+<ul>
+<li>5 oz fresh lettuce, washed and chopped</li>
+<li>1 medium tomato, diced</li>
+<li>½ cup crumbled feta cheese</li>
+<li>¼ cup thinly sliced red onion</li>
+<li>2 tbsp extra virgin olive oil</li>
+<li>1 tbsp fresh lemon juice</li>
+<li>Salt and pepper to taste</li>
+</ul>
+
+<p><strong>Method:</strong></p>
+<p><em>Prepare Salad:</em></p>
+<ol>
+<li>In a large bowl, combine the chopped lettuce, diced tomatoes, crumbled feta cheese, and thinly sliced red onion.</li>
+<li>In a small bowl, whisk together the extra virgin olive oil, fresh lemon juice, salt, and pepper.</li>
+<li>Pour the dressing over the salad and toss gently to combine.</li>
+<li>Serve immediately.</li>
+</ol>
+

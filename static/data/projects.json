@@ -1,0 +1,8 @@
+[
+    {
+      "name": "Qook",
+      "url": "/googrecipegen/",
+      "thumb": "/static/img/thumb_qook.png",
+      "desc": "A recipe generator using Gemini LLM"
+    }
+  ]
